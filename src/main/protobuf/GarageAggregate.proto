@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+import "scalapb/scalapb.proto";
+
+option (scalapb.options) = {
+  package_name: "de.mb.akka.protobufexample.persistence.GarageAggregateProto"
+  flat_package: true
+};
+
+message AddCarEvt {
+
+    option (scalapb.message).extends = "de.mb.akka.protobufexample.actors.GarageActor.GarageEvt";
+
+    int64 id = 1;
+    string name = 2;
+    int32 horsepower = 3;
+
+}
+
+message UpdateCarEvt {
+
+    option (scalapb.message).extends = "de.mb.akka.protobufexample.actors.GarageActor.GarageEvt";
+
+    int64 id = 1;
+    string name = 2;
+    int32 horsepower = 3;
+
+}
