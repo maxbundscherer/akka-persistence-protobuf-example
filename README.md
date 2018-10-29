@@ -17,7 +17,6 @@ SBT and prepared postgres-server required
 
 ### Used technologies
 
-- Akka Http: *Http server*
 - Akka Persistence: *Event sourcing*
 - Google Protocol Buffers (protobuf): *Serializer* (scalaPB - sbt plugin - used)
 
