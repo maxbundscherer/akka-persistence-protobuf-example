@@ -52,7 +52,7 @@ class ProtobufSerializer extends SerializerWithStringManifest {
     manifest match {
 
       case `manifest_GarageActor$AddCarEvt`     => GarageAggregateProto.AddCarEvt.parseFrom(bytes)
-      case `manifest_GarageActor$UpdateCarEvt`  => GarageAggregateProto.AddCarEvt.parseFrom(bytes)
+      case `manifest_GarageActor$UpdateCarEvt`  => GarageAggregateProto.UpdateCarEvt.parseFrom(bytes)
 
     }
 
